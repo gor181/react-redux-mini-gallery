@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import shouldComponentUpdate from 'react-addons-shallow-compare';
 
@@ -11,16 +12,17 @@ import * as actions from '../actions/dialog';
 
 class ConfirmDialog extends Component {
 
-  static propTypes () {
-    return {
-      dialog: PropTypes.shape({
-        title: PropTypes.func.isRwquired,
-        onConfirm: PropTypes.func.isRequired,
-        content: PropTypes.element,
-        open: PropTypes.bool
-      }),
-      hideDialog: PropTypes.func
-    };
+  static propTypes = {
+    dialog: PropTypes.shape({
+      title: PropTypes.func.isRequried,
+      onConfirm: PropTypes.func,
+      content: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.string
+      ]),
+      open: PropTypes.bool
+    }),
+    hideDialog: PropTypes.func
   }
 
   constructor () {
@@ -48,13 +50,11 @@ class ConfirmDialog extends Component {
         label="Cancel"
         secondary={true}
         keyboardFocused={true}
-        onClick={hideDialog}
         onTouchTap={hideDialog}
       />,
       <FlatButton
         label="Submit"
         primary={true}
-        onClick={this.handleConfirm}
         onTouchTap={this.handleConfirm}
       />
     ];
@@ -71,6 +71,10 @@ class ConfirmDialog extends Component {
       </Dialog>
     );
   }
+}
+
+ConfirmDialog.defaultProps = {
+  onConfirm: _.noop
 }
 
 export default connect(

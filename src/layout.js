@@ -16,16 +16,15 @@ import {showDialog} from './actions/dialog';
 const generatePhotos = (amount = 20) => {
   return _.map(_.range(0, amount), id => ({
     id,
-    fileUrl: `https://unsplash.it/200/300/?image=${id}`
+    fileUrl: `https://unsplash.it/200/300/?image=${id}`,
+    selected: false
   }));
 }
 
 class Layout extends Component {
 
-  static propTypes () {
-    return {
-      showDialog: PropTypes.func
-    };
+  static propTypes = {
+    showDialog: PropTypes.func
   }
 
   constructor () {
