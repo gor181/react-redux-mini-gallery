@@ -1,0 +1,95 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "echmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "lodash"],
+  "globals": {
+    "__VERSION__": true
+  },
+  "rules": {
+    // http://eslint.org/docs/rules/block-spacing
+    "block-spacing": 1,
+    "brace-style": 1,
+    "camelcase": 0,
+    "comma-style": 1,
+    "complexity": [2, 8],
+    "curly": 2,
+    "dot-notation": 1,
+    "dot-location": [1, "property"],
+    "eqeqeq": 2,
+    "indent": 0,
+
+    // http://eslint.org/docs/rules/key-spacing
+    "key-spacing": 1,
+    "max-depth": [2, 2],
+
+    // http://eslint.org/docs/rules/max-len
+    "max-len": [1, 140, 2],
+
+    "max-nested-callbacks": [1, 4],
+    "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+    "no-trailing-spaces": 1,
+    "no-use-before-define": 2,
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "no-unused-expressions": 2,
+    "no-lonely-if": 1,
+    "no-nested-ternary": 1,
+    "no-unneeded-ternary": 1,
+    "quotes": [2, "single"],
+    "space-before-blocks": 1,
+    "space-before-function-paren": 1,
+
+    // react specific rules
+    "react/jsx-pascal-case": 1,
+    "react/jsx-no-bind": 2,
+    "react/no-unknown-property": 2,
+    "react/no-multi-comp": 2,
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
+    "react/prefer-es6-class": 2,
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
+    "react/self-closing-comp": 1,
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
+    "react/sort-comp": 1,
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md
+    "react/wrap-multilines": 1,
+
+    // lodash specific rules
+    "lodash/callback-binding": 2,
+    "lodash/unwrap": 2,
+    "lodash/no-double-unwrap": 2,
+    "lodash/collection-return": 2,
+    "lodash/no-extra-args": 2,
+    "lodash/no-single-chain": 2,
+    "lodash/prop-shorthand": 1,
+    "lodash/matches-prop-shorthand": 1,
+    "lodash/identity-shorthand": 1,
+    "lodash/preferred-alias": 1,
+    "lodash/prefer-map": 1,
+    "lodash/prefer-reject": 1,
+    "lodash/prefer-filter": 1,
+    "lodash/prefer-compact": 1,
+    "lodash/prefer-constant": 1,
+    "lodash/prefer-is-nil": 1,
+    "lodash/prefer-startswith": 1,
+    "lodash/prefer-chain": 1,
+    "lodash/prefer-matches": 1,
+    "lodash/prefer-times": 1
+  }
+}
