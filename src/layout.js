@@ -42,13 +42,13 @@ class Layout extends Component {
     return (
       <div className='container'>
        <Row>
-         <Col md='8' md-offset='2'>
+         <Col md='6' md-offset='3'>
            <div className='mui--text-display1 headline'>
              Photo Gallery
            </div>
            <Panel>
              <PhotoGallery
-               photos={generatePhotos(10)}
+               photos={generatePhotos(25)}
                onChange={this.onProfileGalleryUpdate}
                editable={true}
                {...this.props}
