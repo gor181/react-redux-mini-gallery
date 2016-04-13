@@ -34,7 +34,7 @@ class Layout extends Component {
     this.shouldComponentUpdate = shouldComponentUpdate.bind(this);
   }
 
-  onProfileGalleryUpdate (images) {
+  onProfileGalleryUpdate (images) { // eslint-disable-line no-unused-vars
     //TODO Use the data.
   }
 
