@@ -1,6 +1,6 @@
 # React | Redux | Material-UI - Photo Gallery Component
 
-[Demo](http://g.recordit.co/RGfiAENitE.gif)
+[Demo](http://gor181.github.io/react-redux-mini-gallery/)
 
 ## Goal
 
