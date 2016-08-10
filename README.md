@@ -1,5 +1,7 @@
 # React | Redux | Material-UI - Photo Gallery Component
 
+[Demo](http://g.recordit.co/RGfiAENitE.gif)
+
 ## Goal
 
 Create a thumbnail gallery component in React that allows for removing photos from the set.
@@ -42,5 +44,3 @@ ReactDOM.render(
 );
 
 ```
-
-![alt Gallery](http://g.recordit.co/RGfiAENitE.gif)
