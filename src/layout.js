@@ -16,7 +16,7 @@ import {showDialog} from './actions/dialog';
 const generatePhotos = (amount = 20) => {
   return _.map(_.range(0, amount), id => ({
     id,
-    fileUrl: `https://unsplash.it/200/300/?image=${id}`,
+    fileUrl: `http://loremflickr.com/320/340?random=${id}`,
     selected: false
   }));
 }
