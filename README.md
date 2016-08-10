@@ -43,4 +43,4 @@ ReactDOM.render(
 
 ```
 
-![alt demo](https://drops.azureedge.net/drops/files/acc_497368/16gf6?se=2016-08-10T07%3A05%3A52Z&sig=RZEMgD4L4FiDkrrx74tAu%2BzkCI%2B1GtwXyFxdN29JZbU%3D&sp=r&sr=b&st=2016-08-10T06%3A05%3A52Z)
+![alt Gallery](http://g.recordit.co/RGfiAENitE.gif)
