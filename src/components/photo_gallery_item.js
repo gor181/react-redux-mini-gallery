@@ -1,9 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
-import GridTile from 'material-ui/lib/grid-list/grid-tile';
-import Checkbox from 'material-ui/lib/checkbox';
-import IconButton from 'material-ui/lib/icon-button';
-import FontIcon from 'material-ui/lib/font-icon';
+import {GridTile, Checkbox, IconButton, FontIcon} from 'material-ui';
 
 import {openURL} from '../helpers/url';
 
@@ -48,10 +45,10 @@ export default class PhotoGallery extends Component {
     const {photo: {selected}} = this.props;
     return (
       <div>
-        <IconButton>
-          <Checkbox color="white" onCheck={this.onCheck} checked={selected}/>
+        <IconButton onTouchTap={this.onCheck}>
+          <Checkbox color="white" checked={selected} />
         </IconButton>
-        <IconButton onClick={this.deleteImage}>
+        <IconButton onTouchTap={this.deleteImage}>
           <FontIcon className="material-icons">delete</FontIcon>
         </IconButton>
       </div>
@@ -66,7 +63,7 @@ export default class PhotoGallery extends Component {
         titleBackground={editable ? TITLE_BACKGROUND : ''}
         actionIcon={editable ? this.renderActionsIcons(id) : null}
       >
-        <img src={fileUrl} onClick={this.openImage} className='pointer' />
+        <img src={fileUrl} onTouchTap={this.openImage} className='pointer' />
       </GridTile>
     );
   }

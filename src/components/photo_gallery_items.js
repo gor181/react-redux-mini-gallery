@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import shouldComponentUpdate from 'react-addons-shallow-compare';
 
-import GridList from 'material-ui/lib/grid-list/grid-list';
+import {GridList} from 'material-ui';
 
 import GalleryItem from './photo_gallery_item';
 

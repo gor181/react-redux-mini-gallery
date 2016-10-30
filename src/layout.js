@@ -41,7 +41,7 @@ class Layout extends Component {
     return (
       <div className='container'>
        <Row>
-         <Col md='6' md-offset='3'>
+         <Col className='mui-col-md-6 mui-col-md-offset-3'>
            <div className='mui--text-display1 headline'>
              Photo Gallery
            </div>

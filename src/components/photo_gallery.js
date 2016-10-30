@@ -4,8 +4,7 @@ import shouldComponentUpdate from 'react-addons-shallow-compare';
 
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
-import RaisedButton from 'material-ui/lib/raised-button';
-import FontIcon from 'material-ui/lib/font-icon';
+import {RaisedButton, FontIcon} from 'material-ui';
 
 import GalleryItems from './photo_gallery_items';
 
@@ -89,19 +88,19 @@ export default class PhotoGallery extends Component {
     return (
       <Row>
         <Row>
-          <Col md={10} md-offset={1} className='mb-20 mui--text-right'>
+          <Col className='mui-col-md-10 mui-col-md-offset-1 mb-20 mui--text-right'>
             {editable &&
               <RaisedButton
                 label="Delete Selected"
                 icon={<FontIcon className="material-icons">delete</FontIcon>}
                 disabled={!selectedPhotosCount}
-                onClick={this.confirmBulkDelete}
+                onTouchTap={this.confirmBulkDelete}
               />
             }
           </Col>
         </Row>
         <Row>
-          <Col md={10} md-offset={1}>
+          <Col className='mui-col-md-10 mui-col-md-offset-1'>
             <GalleryItems
               photos={photos}
               editable={editable}

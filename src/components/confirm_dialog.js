@@ -2,8 +2,7 @@ import _ from 'lodash';
 import React, {Component, PropTypes} from 'react';
 import shouldComponentUpdate from 'react-addons-shallow-compare';
 
-import Dialog from 'material-ui/lib/dialog';
-import FlatButton from 'material-ui/lib/flat-button';
+import {Dialog, FlatButton} from 'material-ui';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
