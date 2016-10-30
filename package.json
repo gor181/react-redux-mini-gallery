@@ -1,7 +1,7 @@
 {
-  "name": "simpixelated-starter",
+  "name": "react-redux-mini-gallery",
   "version": "0.0.1-beta2",
-  "description": "A boilerplate starter kit for React projects using ES6, Babel, ESLint, and Webpack.",
+  "description": "Simple Gallery component - React, Redux, Material-ui",
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
@@ -13,25 +13,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simpixelated/react-es6-starter.git"
+    "url": "git+https://github.com/gor181/react-redux-mini-gallery.git"
   },
   "keywords": [
     "react",
-    "es6",
-    "es2015",
-    "babel",
-    "webpack",
-    "boilerplate",
-    "starter"
+    "redux",
+    "material-ui",
+    "galllery"
   ],
-  "author": "Jordan \"Simpixelated\" Kohl",
+  "author": "Goran Udosic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simpixelated/react-es6-starter/issues"
+    "url": "https://github.com/gor181/react-redux-mini-gallery/issues"
   },
-  "homepage": "https://github.com/simpixelated/react-es6-starter#readme",
+  "homepage": "https://github.com/gor181/react-redux-mini-gallery#readme",
   "dependencies": {
-    "i": "^0.3.5",
     "lodash": "4.0.1",
     "material-ui": "^0.16.1",
     "moment": "2.11.2",
